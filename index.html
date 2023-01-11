@@ -1,7 +1,67 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>My Personal Website</title>
+  <style>
+    /* Add your CSS styling here */
+    body {
+      background-color: white;
+      color: black;
+    }
+    /* header styles */
+    header {
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    /* dropdown menu styles */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: black;
+        color: white;
+        min-width: 160px;
+        z-index: 1;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    /* Add your other CSS styling here */
+  </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <header>
+    <h1>My Personal Website</h1>
+    <div class="dropdown">
+      <a href="#">Menu</a>
+      <div class="dropdown-content">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+  <div>
+    <h2>Welcome!</h2>
+    <p>This is my personal website where you can learn more about me and the things that I'm interested in.</p>
+  </div>
+  <div>
+    <h2>About</h2>
+    <p>Here's a little bit about me...</p>
+  </div>
+  <div>
+    <h2>Projects</h2>
+    <p>Here are some projects that I've worked on...</p>
+  </div>
+  <div>
+    <h2>Contact</h2>
+    <p>Get in touch with me here...</p>
+  </div>
 </body>
 </html>
