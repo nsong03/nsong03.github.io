@@ -6,8 +6,18 @@
     <title>CV</title>
 </head>
 <body>
-    <div id="header-container"></div>
-
+    <div id="header"></div>
+    <script>
+        // Load the header HTML file
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'header.html', true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                document.getElementById('header-container').innerHTML = xhr.responseText;
+            }
+        };
+        xhr.send();
+    </script>
     <!-- Add your CV content here -->
 </body>
 </html>
