@@ -16,3 +16,4 @@ sectionHeaders.forEach(function(header) {
   var toggleIcon = header.querySelector('.toggle-icon');
   toggleIcon.textContent = isVisible ? '▲' : '▼';
 });
+
