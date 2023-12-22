@@ -1,0 +1,282 @@
+/* Global */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    font-size: 18px;
+    height: 99%;
+    width: 99%;
+    margin: 5px;
+}
+
+.mainbody {
+    display:block;
+    width: 100%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+/* Global: Structure */
+.center {
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.texticon {
+    display: inline-block;
+    position: relative;
+    top: 7px;
+}
+
+.box-index {
+    border: 2px solid black;
+    padding: 10px;
+    width: 23%;
+    position: relative;
+}
+
+.row {
+    content: "";
+    display: table;
+    clear: both;
+    line-height:19px;
+    width: 100%;
+    margin: 0;
+}
+
+.column {
+    float: left;
+    overflow-wrap: normal;
+    border-top: 1.5px solid #aaa;
+    width: 95%
+}
+
+.column-indent {
+    overflow-wrap: normal;
+    padding-left: 15%;
+}
+
+.column2 {
+    float: left;
+    width: 50%;
+    overflow-wrap: normal;
+}
+
+/* Toggle Sections */
+.toggle {
+    margin-bottom: 15px;
+}
+
+.show {
+    display: none;
+}
+
+.toggle-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.toggle-icon {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.toggle-content{
+    display:none;
+    width: 80%;
+}
+
+.toggle-content.show {
+    display: block;
+}
+
+.classes-taken {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 300px));
+    gap: 15px;
+}
+.class-schedule {
+    margin: 5px;
+    text-align: center;
+}
+
+.timeline {
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    line-height: 23px;
+    font-style: normal;
+    font-weight: normal;
+}
+.timeline-header {
+    border: none;
+    text-align: center;
+    font-style: bold;
+    font-weight: bold;
+}
+.timeline-date {
+    text-align:center;
+    vertical-align: top;
+    font-style: bold;
+    font-weight: bold;
+}
+
+.sublist {
+    margin: 0px;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+  width: 250px; /* Width of the first column */
+}
+
+
+th {
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    border-right: 1.5px solid black;
+}
+
+th:last-child {
+    border-right: none;
+    padding-left: 15px;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    top:0;
+    margin-top: 15px;
+    padding-bottom: 5px;
+    overflow: hidden;
+    float: left;
+    position: absolute;
+    border-bottom: 1.5px solid #222222;
+}
+
+.header-indent {
+    margin-top: 60px;
+
+}
+
+.header-right {
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+}
+
+.name-header {
+    margin-left: 20px;
+    font-size: 30px;
+    font-style: bold;
+    font-weight: bold;
+    line-height:32px;
+    text-decoration:none;
+    color:black;
+}
+
+.menu-list {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    font-style: bold;
+    text-decoration: none;
+    line-height: 22px;
+    color: rgb(78, 78, 78);
+}
+.menu-list:hover {
+    text-decoration: underline;
+}
+
+.menu-list-index {
+    font-size: 19px;
+    text-decoration: none;
+    line-height: 18px;
+    color: rgb(78, 78, 78);
+}
+.menu-list-index:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.indexfooter{
+    margin-top: 20px;
+}
+
+.footericon {
+    display: inline-block;
+    position: relative;
+    top: 7px;
+}
+
+
+/* Global: Text */
+br {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.name {
+    font-size: 30px;
+    font-style: bold;
+    line-height:32px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.text {
+    font-size: 18px;
+    font-style: normal;
+    margin: 0;
+}
+
+.text-small {
+    font-size: 16px;
+    font-style: normal;
+    margin: 0;
+}
+.text-sectiontitle {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.text-title {
+    font-size: 20px;
+    margin: 0;
+}
+
+.text-subtitle {
+    font-size: 19px;
+    margin: 0;
+}
+
+.text-left {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 80%;
+}
+
+.text-link {
+    text-decoration:underline;
+    color:rgb(12, 57, 141);
+}
+.text-link:hover {
+    text-decoration: none;
+    font-style: bold;
+    font-weight: bold;
+    color:rgb(12, 57, 141);
+}
+/* Global: Adaptive */
+@media (max-width: 1300px) {
+    .box-index {
+        border: 2px solid black;
+        padding: 10px;
+        width: 60%;
+    }
+
+
+}
